@@ -1,0 +1,102 @@
+/* Import's */
+@import url(https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;800;900&display=swap);
+
+/* Configurations */
+:root {
+  --body-bg-color: #faf7fd;
+  --purple: #bb99dd;
+}
+
+* {
+  margin: 0%;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--body-bg-color);
+  font-family: "Poppins", sans-serif;
+}
+
+/* The Style */
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 99vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.container .girlImage {
+  width: 300px;
+  height: 300px;
+  border: 2px solid var(--purple);
+  border-radius: 100%;
+  padding: 5px;
+  margin-bottom: 20px;
+}
+
+.container .instagramText {
+  color: var(--purple);
+  margin-bottom: 35px;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 24px;
+  transition: all ease 0.6s;
+}
+
+.container .instagramText:hover {
+  opacity: 0.3;
+}
+
+.container .socialBtns {
+  display: flex;
+  flex-direction: column;
+}
+
+.container .socialBtns .btn {
+  margin-bottom: 20px;
+  color: var(--purple);
+  text-decoration: none;
+  border: 3.5px solid var(--purple);
+  padding: 20px 150px;
+  border-radius: 4px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  transition: all ease 0.7s;
+}
+
+.container .socialBtns .btn:hover {
+  background-color: var(--purple);
+  color: var(--body-bg-color);
+}
+
+.socialMediaLogos .socialLogos {
+  margin-left: 25px;
+}
+
+/* Response */
+@media (max-height: 910px) {
+  .container .girlImage {
+    width: 250px;
+    height: 250px;
+  }
+
+  .container .socialBtns .btn {
+    margin-bottom: 20px;
+  }
+
+  .socialMediaLogos .socialLogos {
+    margin-top: 10px;
+  }
+}
+
+@media (max-height: 750px) {
+  .container .socialBtns .btn {
+    padding: 10px 130px;
+  }
+}
